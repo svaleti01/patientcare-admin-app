@@ -4,6 +4,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule } from '@angular/forms';
 import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
+import { AppRoutingModule } from './app-routing.module';
 
 import {
 	GridModule,
@@ -15,14 +16,13 @@ import {
 	SelectModule,
 	ButtonModule
 } from 'carbon-components-angular';
-import { StarterHomeComponent } from './starter-home/starter-home.component';
-
 // carbon-components-angular default imports
 import { UIShellModule } from 'carbon-components-angular';
 import { Notification20Module } from '@carbon/icons-angular/lib/notification/20';
 import { UserAvatar20Module } from '@carbon/icons-angular/lib/user--avatar/20';
 import { AppSwitcher20Module } from '@carbon/icons-angular/lib/app-switcher/20';
 import { HeaderComponent } from './header/header.component';
+import { StarterHomeComponent } from './starter-home/starter-home.component';
 import { PillboxListComponent } from './pillbox-list/pillbox-list.component';
 
 @NgModule({
@@ -48,7 +48,8 @@ import { PillboxListComponent } from './pillbox-list/pillbox-list.component';
 		TableModule,
 		InputModule,
 		SelectModule,
-		ButtonModule
+		ButtonModule,
+		AppRoutingModule
 	],
 	bootstrap: [AppComponent]
 })
